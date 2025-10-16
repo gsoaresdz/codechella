@@ -51,7 +51,7 @@ public class Evento {
         return descricao;
     }
 
-    public void setDescrica(String descricao) {
+    public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 }
