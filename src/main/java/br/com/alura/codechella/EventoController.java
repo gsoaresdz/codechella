@@ -38,6 +38,11 @@ public class EventoController {
     public Mono<EventoDto> obterPorId(@PathVariable Long id) {
         return servico.obterPorId(id);
     }
+
+    @GetMapping(value = "/{id}/traduzir/{idioma}")
+    public Mono<String> obterTraducao(@PathVariable Long id, @PathVariable String idioma) {
+        return servico.obterTraducao(id, idioma);
+    }
     
     
     @PostMapping
